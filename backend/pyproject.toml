@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "hiremepls"
+version = "0.1.0"
+description = ""
+authors = ["TemaSaur <69428015+TemaSaur@users.noreply.github.com>"]
+license = "THE BEER-WARE LICENSE"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+fastapi = "^0.114.1"
+uvicorn = "^0.30.6"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
