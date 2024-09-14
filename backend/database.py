@@ -10,7 +10,7 @@ if __name__ == "__main__":
 
 
 DATABASE_URL = (
-	f"postgresql+asyncpg://postgres:{os.getenv("PG_PASSWORD")}@0.0.0.0:5432/postgres"
+	f"postgresql+asyncpg://postgres:{os.getenv("PG_PASSWORD")}@localhost:5432/postgres"
 )
 
 engine = create_async_engine(DATABASE_URL)
