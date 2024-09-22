@@ -1,4 +1,3 @@
-version: "3.9"
 services:
   postgres:
     env_file:
@@ -8,3 +7,14 @@ services:
       POSTGRES_PASSWORD: ${PG_PASSWORD}
     ports:
       - "5432:5432"
+
+  backend:
+    env_file:
+      - .env
+    depends_on:
+      - postgres
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
